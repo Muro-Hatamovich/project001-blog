@@ -1,0 +1,12 @@
+.nav {
+	&__item {
+		margin-right: 50px;
+		font-size: 18px;
+		font-weight: 600;
+		text-transform: capitalize;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

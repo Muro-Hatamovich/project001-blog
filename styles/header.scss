@@ -1,0 +1,21 @@
+.header {
+	background: $c-white;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	@include useShadow;
+
+	&__main {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 25px 0;
+		color: $c-body;
+	}
+
+	.logo {
+		font-size: 20px;
+	}
+}

@@ -1,0 +1,64 @@
+.post {
+	width: 45%;
+	background: $c-white;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	@include useShadow;
+	margin-bottom: 50px;
+	display: flex;
+	padding: 0 30px 30px;
+
+	&__main {
+		width: 75%;
+		display: flex;
+		flex-flow: column;
+	}
+
+	&__header {
+		margin-bottom: 30px;
+		display: flex;
+		justify-content: space-between;
+		background: #52565e;
+		padding: 5px 20px;
+		border-radius: 30px;
+		@include useShadow;
+		transform: translateY(-50%);
+		color: $c-white;
+		font-size: 12px;
+		font-weight: 600;
+	}
+
+	&__title {
+		font-size: 20px;
+		margin-bottom: 10px;
+		line-height: 1.2;
+	}
+
+	&__para {
+		color: #777;
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+
+	&__image {
+		width: 180px;
+		height: 170px;
+		border-radius: 50%;
+		overflow: hidden;
+		transform: translate(50%, 10%);
+		@include useShadow;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+	}
+
+	&__link {
+		display: block;
+		color: green;
+		margin-top: auto;
+	}
+}
